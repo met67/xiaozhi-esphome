@@ -192,7 +192,9 @@ sensor:
             int current = (int)x;
             if (current != id(last_battery_percent)) {
               id(last_battery_percent) = current;
-              id(draw_display).execute();
+              if (id(Sled).current_values.is_on()) {
+                id(draw_display).execute();
+              }
             }
 
 touchscreen:
