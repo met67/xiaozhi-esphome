@@ -511,8 +511,23 @@ voice_assistant:
     - script.execute: draw_display
 
 script:
+  - id: timer_backlight
+    mode: restart     # Light will be kept on during 1 minute since
+                      # the latest time the script was executed
+    then:
+      - if:
+          condition:
+            light.is_off: Sled
+          then:
+            - output.turn_on: backlight_output
+            - delay: 1 min
+            - output.turn_off: backlight_output
+          else:
+            output.turn_on: backlight_output
+
   - id: draw_display
     then:
+      - script.execute: timer_backlight
       - if:
           condition:
             lambda: return !id(init_in_progress);
