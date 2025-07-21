@@ -48,6 +48,7 @@ Sorry video removed by youtube and my account blocked. strange world we live in.
 * Spotpear Muma Horse v2
 * Spotpear Puck
 * DIY (breadboard)
+* Guition 1.8" Taichi pi (JC3636W518C)
 
 ## 🛒 Where to Buy
 
@@ -58,6 +59,8 @@ Muma Box: https://vi.aliexpress.com/item/1005009043526078.html
 Muma Horse: https://vi.aliexpress.com/item/1005008884232596.html
 
 Puck: https://www.aliexpress.com/item/1005009016529496.html
+
+Guition Taichi pi: https://vi.aliexpress.com/item/1005007420092928.html
 
 Breadboard: Look in devices/Breadboard: https://github.com/RealDeco/xiaozhi-esphome/tree/main/devices/Breadboard
 
