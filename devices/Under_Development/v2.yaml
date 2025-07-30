@@ -1,6 +1,9 @@
 substitutions:
-  name: esphome-web-0bac48
-  friendly_name: "Xiaozhi Ball V2"
+  name: jarvis
+  friendly_name: "Jarvis"
+  devicename: "Jarvis"
+  upper_devicename: JARVIS
+  deviceid: jarvis
 
 ## v1.07 26-jul-2025 #############################################################################################################################
 ## changed how to play startup sound to avoid double triggering
@@ -89,6 +92,9 @@ substitutions:
 
   font_glyphsets: "GF_Latin_Core"
   font_family: Figtree
+
+packages:
+  base: !include common/base.yaml
 
 esphome:
   name: ${name}
